@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 
-<!-- 
-  Hot Cocoa - Hebe Huang, Josephine Lee, Annabel Zhang, Han Zhang
-  SoftDev
-  P00 -- Cafe of Stories | Design Doc
-  2021-10-27
+<!--
+	Hot Cocoa - Hebe Huang, Josephine Lee, Annabel Zhang, Han Zhang
+	SoftDev
+	P00 -- Cafe of Stories | Design Doc
+	2021-10-27
  -->
 
 <html>
 
-  <head>
-    <title> Home Page </title>
-  </head>
+	<head>
+		<title> Home Page </title>
+	</head>
 
-  <body>
-    <h1>
-      {{status}}
-    </h1>
-      <h2>  Cafe of Stories </h2>
-    Welcome {{ user }}! <!-- user input -->
-    <br></br>
-    <form action="/logout">
-      <input type="submit" value="Logout" />
-  </form>
-  <br></br>
-    <form action="/createstory">
-      <input type="submit" value="Create New Story" />
-    </form>
-  <br></br>
-  <form action="/addToStory">
-    <input type="submit" value="Add to a story " />
-  </form>
-  <br> </br>
-  <form action="/viewStory" method = 'POST'>
-    Enter Story Title to View: <input type="text" name="title">
-      <input type = "submit" value='View Story' />
-  </form>
+	<body>
+		<h1>
+			{{status}}
+		</h1>
+			<h2>Cafe of Stories </h2>
+		Welcome {{ user }}! <!-- user input -->
+		<br></br>
+		<form action="/logout">
+			<input type="submit" value="Logout" />
+	</form>
+	<br></br>
+		<form action="/createstory">
+			<input type="submit" value="Create New Story" />
+		</form>
+	<br></br>
+	<form action="/addToStory">
+		<input type="submit" value="Add to a story " />
+	</form>
+	<br> </br>
+	<form action="/viewStory" method = 'POST'>
+		Enter Story Title to View: <input type="text" name="title">
+			<input type = "submit" value='View Story' />
+	</form>
 
-  <h3>My stories</h3>
-  {% for value in user_stories %}
-    {{value}}
-    <br>
-  {% endfor %}
-  </body>
+	<h3>My stories</h3>
+	{% for value in user_stories %}
+		{{value}}
+		<br>
+	{% endfor %}
+	</body>
 
 </html>

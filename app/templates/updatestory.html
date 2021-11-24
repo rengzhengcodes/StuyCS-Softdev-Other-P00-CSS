@@ -9,32 +9,32 @@
 
 
 <html>
-    <head>
-        <title> Add to Existing Story </title>
-    </head>
+	<head>
+		<title> Add to Existing Story </title>
+	</head>
 
-    <h4>
-        Enter the existing story's title you want to add to. You may not add to a story you have already contributed to.
-    </h4>
+	<h4>
+		Enter the existing story's title you want to add to. You may not add to a story you have already contributed to.
+	</h4>
 
-    <form action="/addToTitle" method = 'POST'>
-        Title: <input type="text" name="title">
-        <br>
-        <button type = "submit"> Submit </button>
-      </form>
-    
-    <h5>
-        List of Stories:
-    </h5>
+	<form action="/addToTitle" method = 'POST'>
+		Title: <input type="text" name="title">
+		<br>
+		<button type = "submit"> Submit </button>
+	  </form>
 
-    {% for value in stories %}
-        {{value[0]}}
-        <br>
-    {% endfor %}
+	<h5>
+		List of Stories:
+	</h5>
 
-    <form action="/auth" method = 'POST'>
-        <br>
-        <button type = "submit" formaction="/"> Home </button>
-      </form>
+	{% for value in stories %}
+		{{value[0]}}
+		<br>
+	{% endfor %}
+
+	<form action="/auth" method = 'POST'>
+		<br>
+		<button type = "submit" formaction="/"> Home </button>
+	</form>
 
 </html>

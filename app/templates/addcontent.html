@@ -9,25 +9,26 @@
 
 
 <html>
-    <head>
-        <title> Add to Existing Story </title>
-    </head>
+	<head>
+		<title> Add to Existing Story </title>
+		
+	</head>
 
-    <h3>
-        Submit your addition to this story.
-    </h3>
+	<h3>
+		Submit your addition to this story.
+	</h3>
 
-    <form action="/uploadUpdatedStory" method = 'POST'>
-        Content: <br>
-        <textarea id="content" name="content" rows="4" cols="50"></textarea>
-        <br>
-        <button type = "submit"> Submit </button>
-      </form>
-    <br>
-    <h4> ON THE LAST EPISODE OF {{title}}... </h4>
-    "{{content[0]}}"
-    <br><br><br>
-    <form action="/auth" method = 'POST'>
-        <button type = "submit" formaction="/"> Home </button>
-    </form>
+	<form action="/uploadUpdatedStory" method = 'POST'>
+		Content: <br>
+		<textarea id="content" name="content" rows="4" cols="50"></textarea>
+		<br>
+		<button type = "submit"> Submit </button>
+	  </form>
+	<br>
+	<h4> ON THE LAST EPISODE OF {{title}}... </h4>
+	"{{content[0]}}"
+	<br><br><br>
+	<form action="/auth" method = 'POST'>
+		<button type = "submit" formaction="/"> Home </button>
+	</form>
 </html>

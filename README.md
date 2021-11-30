@@ -39,3 +39,5 @@ $ source ~/marshmallows/Scripts/activate (for Windows)
 ### 5. Open up the url given by the terminal: [http://127.0.0.1:5000/]
 
 __Notes:__
+ * CSS classes made everything easier to read and compactified the code.
+ * references to CSS stylesheets are from where you're running Flask, not where the HTML is stored

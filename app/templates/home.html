@@ -11,7 +11,7 @@
 
 	<head>
 		<title> Home Page </title>
-		<link src="stylesheet" href="{{ url_for('static', filename='static/styles/stylesheet.css') }}"/>
+		<link rel="stylesheet" href="static/styles/stylesheet.css"/>
 	</head>
 
 	<body>
@@ -22,20 +22,20 @@
 		Welcome {{ user }}! <!-- user input -->
 		<br></br>
 		<form action="/logout">
-			<input type="submit" value="Logout" />
+			<input class="butt1" type="submit" value="Logout" />
 	</form>
 	<br></br>
 		<form action="/createstory">
-			<input type="submit" value="Create New Story" />
+			<input class="butt2" type="submit" value="Create New Story" />
 		</form>
 	<br></br>
 	<form action="/addToStory">
-		<input type="submit" value="Add to a story " />
+		<input class="butt2" type="submit" value="Add to a story " />
 	</form>
 	<br> </br>
 	<form action="/viewStory" method = 'POST'>
-		Enter Story Title to View: <input type="text" name="title">
-			<input type = "submit" value='View Story' />
+		<input class="textfield2" type="text" name="title" placeholder="Enter a story to view">
+			<input class="butt1" type="submit" value='View Story' />
 	</form>
 
 	<h3>My stories</h3>

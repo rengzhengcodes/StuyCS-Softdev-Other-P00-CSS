@@ -11,7 +11,7 @@
 <html>
 	<head>
 		<title> Add to Existing Story </title>
-		<link src="stylesheet" href="{{ source_url('static', 'static/styles/stylesheet.css') }}"/>
+		<link rel="stylesheet" href="static/styles/stylesheet.css"/>
 	</head>
 
 	<h3>
@@ -20,15 +20,15 @@
 
 	<form action="/uploadUpdatedStory" method = 'POST'>
 		Content: <br>
-		<textarea id="content" name="content" rows="4" cols="50"></textarea>
+		<textarea class="textfield3" id="content" name="content" rows="4" cols="50"></textarea>
 		<br>
-		<button type = "submit"> Submit </button>
+		<button class="butt1" type="submit"> Submit </button>
 	  </form>
 	<br>
 	<h4> ON THE LAST EPISODE OF {{title}}... </h4>
 	"{{content[0]}}"
 	<br><br><br>
 	<form action="/auth" method = 'POST'>
-		<button type = "submit" formaction="/"> Home </button>
+		<button class="butt1" type="submit" formaction="/"> Home </button>
 	</form>
 </html>

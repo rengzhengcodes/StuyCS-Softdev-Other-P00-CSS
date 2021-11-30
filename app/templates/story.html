@@ -11,7 +11,7 @@
 <html>
 	<head>
 		<title> {{title}} </title>
-		<link src="stylesheet" href="{{ url_for('static', filename='static/styles/stylesheet.css') }}"/>
+		<link rel="stylesheet" href="static/styles/stylesheet.css"/>
 	</head>
 
 	<body>
@@ -25,7 +25,7 @@
 
 	<form action="/auth" method = 'POST'>
 		<br>
-		<button type = "submit" formaction="/"> Home </button>
+		<button class="butt1" type="submit" formaction="/"> Home </button>
 	</form>
 
 </html>

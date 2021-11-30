@@ -1,4 +1,4 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 
 <!--
 	Hot Cocoa - Hebe Huang, Josephine Lee, Annabel Zhang, Han Zhang
@@ -11,10 +11,10 @@
 
 	<head>
 		<title> LOGIN PAGE </title>
-		<link src="stylesheet" href="{{ url_for('static', filename='static/styles/stylesheet.css') }}"/>
+		<link rel="stylesheet" href="static/styles/stylesheet.css"/>
 	</head>
 
-	<body>
+	<body class="login">
 		<h1>
 			{{status}}
 		</h1>
@@ -29,12 +29,13 @@
 			(Username must begin with a letter)
 		</h5>
 		<form action="/auth" method = 'POST'>
-			Username: <input type="text" name="username">
+			<input class="textfield1" type="text" name="username" placeholder="Username"> 
 			<br>
-			Password: <input type="password" name="password">
+			<input class="textfield1" type="password" name="password" placeholder="password">
 			<br>
-			<button type = "submit" formaction="/auth"> Login </button>
-			<button type = "submit" formaction="/signup"> Signup </button>
+			<button class="butt1" type="submit" formaction="/auth"> Login </button>
+			<br>
+			<button class="butt1" type="submit" formaction="/signup"> Signup </button>
 		</form>
 		<br>
 	</body>

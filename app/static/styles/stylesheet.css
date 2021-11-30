@@ -1,94 +1,69 @@
 body {
-    background-color: #f5f5f5;
+	background-color: #F1FAEE;
 }
 
-ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+h1 {
+	color: #E63946;
 }
 
-li.nav {
-    float: left;
+h2 {
+	color: #080708;
 }
 
-li a.nav{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+h3 {
+	color: #457B9D;
 }
 
-li a.nav:hover {
-    background-color: #111;
+.login {
+	text-align: center;
+	margin-top: 25vh;
 }
 
-ul.story {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.textfield1 {
+	border-radius: 5px;
+	border: 1px solid #A8DADC;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	height: 25px;
+	width: 250px;
 }
 
-li.story {
-    border: 1px solid black;
-    padding: 10px 0px;
-    float: none;
-    background-color: azure;
-    margin-top: 10px;
-    width: 250px;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+.textfield2 {
+	border-radius: 5px;
+	border: 1px solid #A8DADC;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	height: 30px;
+	width: 250px;
 }
 
-li a.story {
-    padding: 14px 16px;
-    color: black;
-    text-decoration: none;
-    size: fit-content;
+.textfield3 {
+	border-radius: 5px;
+	border: 1px solid #A8DADC;
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
-li.story:hover {
-    background-color: aquamarine;
+.butt1 {
+	background-color: #A8DADC;
+	padding: 10px;
+	width: 100px;
+	height: 35px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	text-align: center; 
+	line-height: 5px;
 }
 
-li.search {
-    float:right;
-    margin-right: 10px;
-}
-input.search {
-    padding: 2px 3px;
-    text-decoration: none;
-    margin-top: 12px;
-}
-
-div.story {
-    float:left;
-}
-
-.story-text {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-.newstory {
-    color: black;
-    text-decoration: none;
-    size: fit-content;
-    border: 1px solid black;
-    border-radius: 80%;
-    padding: 20px;
-    background-color: bisque;
-}
-
-.newstory:hover {
-    background-color: moccasin;
-}
-
-.auth {
-    margin-top: 25vh;
-    margin-bottom: 25vh;
+.butt2 {
+	background-color: #A8DADC;
+	padding: 10px;
+	width: 150px;
+	height: 35px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	text-align: center; 
+	line-height: 5px;
 }

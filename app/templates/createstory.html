@@ -11,7 +11,7 @@
 <html>
 	<head>
 		<title> Create New Story </title>
-		<link src="stylesheet" href="{{ url_for('static', filename='static/styles/stylesheet.css') }}"/>
+		<link rel="stylesheet" href="static/styles/stylesheet.css"/>
 	</head>
 
 	<h2>
@@ -23,15 +23,15 @@
 	</h4>
 
 	<form action="/auth" method = 'POST'>
-		Title: <input type="text" name="title">
+		Title: <input class="textfield2" type="text" name="title" placeholder="Enter a Title">
 		<br>
 		Content: <br>
-		<textarea id="content" name="content" rows="4" cols="50">{{story}}</textarea>
+		<textarea class="textfield3" id="content" name="content" rows="4" cols="50">{{story}}</textarea>
 		<!--<input type="text" name="content" size="100"> -->
 		<br>
-		<button type = "submit" formaction="/uploadNewStory"> Add new story </button>
+		<button class="butt2" type="submit" formaction="/uploadNewStory"> Add new story </button>
 		<br>
-		<button type = "submit" formaction="/"> Home </button>
+		<button class="butt1" type="submit" formaction="/"> Home </button>
 	</form>
 
 </html>

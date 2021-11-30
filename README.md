@@ -7,7 +7,8 @@ Josephine Lee: Project Manager; HTML templates, front end
 Han Zhang: Python backend  
 Annabel Zhang: Python backend  
 Hebe Huang: Database generation  
-
+Renggeng Zheng: Editor
+Oscar Wang: Editor
 
 ## How to install and run our website:
 
@@ -36,3 +37,5 @@ $ source ~/marshmallows/Scripts/activate (for Windows)
 ```
 
 ### 5. Open up the url given by the terminal: [http://127.0.0.1:5000/]
+
+__Notes:__
